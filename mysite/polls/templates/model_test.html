@@ -110,8 +110,32 @@
 
 <h1>多行文本</h1>
     <textarea rows="3">
-
     </textarea>
+<h1>CSS样式的三种写法</h1>
+    <div style="color:red">1、直接写在标签内部</div>
+    <style>
+        .s1{
+            color: green;
+            }
+    </style>
+    <div class='s1'> 2、写在外面，标签内引用 </div>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <div class="s2">3、写到文件中，导入！</div>
+<h1>CSS的选择器</h1>
+    <style>
+        #test{color: gray}
+        li{color: pink}
+        .gold[p='jinzi']{color:gold}
+    </style>
+        <div id="test">id选择器</div>
+    <ul>
+        <li>标签选择器</li>
+        <li>北京</li>
+        <li>云南</li>
+    </ul>
+<h1>CSS的属性选择器</h1>
+<div class="gold" p="jinzi">属性选择器</div>
+<div class="gold" p="stone">属性不对，未被选择 </div>
 {% if n1 == "YuZhiXiang" %}
 <h1>我是yzx</h1>
 {% elif n1 == "Zhao" %}
