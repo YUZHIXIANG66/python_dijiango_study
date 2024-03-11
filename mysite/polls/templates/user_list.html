@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,38 @@
     <title>Title</title>
 </head>
 <body>
+    <h1>用户列表</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>头像</th>
+                <th>姓名</th>
+                <th>邮箱</th>
+                <th>更多信息</th>
+                <th>操作</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> <img style = "height : 50px" src="{% static 'img/Yu.png' %}" alt =  ""> </td>
+                <td>YU</td>
+                <td>yzx2109337235@gmai.com</td>
+                <td> <a href="https://github.com/YUZHIXIANG66">点击查看</a> </td>
+                <td>编辑 删除</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td> <img style = "height : 50px" src="{% static 'img/Yu.png' %}" alt =  ""> </td>
+                <td>Zhao</td>
+                <td>yzx2109337235@gmai.com</td>
+                <td> <a href="https://github.com/YUZHIXIANG66">点击查看</a> </td>
+                <td>编辑 删除</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
