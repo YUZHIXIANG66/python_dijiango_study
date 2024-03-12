@@ -47,7 +47,9 @@ def post_login(request):
     print(f"name : {res['username']}    psw : {res['password']}")
     print('-------------------------------------------------------')
     return HttpResponse(f"{res['username']}     {res['password']}")
-
+#demo案例
+def demo(request):
+    return render(request,"demo.html")
 if __name__== '__main__':
     res = requests.get("https://ldocctvwbcdali.v.myalicdn.com/ldocctvwbcd/cdrmldcctv4_1md")
     print(res)
